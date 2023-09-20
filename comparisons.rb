@@ -60,21 +60,32 @@ puts "Is the number of students less than or equal to 21?", number_students <= 2
 
 puts 4 < 9
 #YOU DO: Explain.
+# The expression 4 < 9 is evaluating whether or not 4 "is less than" 9, 
+# and the "puts" in front of them is indicating that the answer (true or false) should be printed to the console
 
 books = 3
 puts 4 < books
 # YOU DO: Explain.
+# books as a variable was created and assigned a value of 3 as an integer. 
+# The expression "4 < books" is asking whether 4 is less than the value of the variable.
+# In this case, this is "false".
+# puts will print the answer to the console
 
 friends = 6
 siblings = 2
 puts friends > siblings
 # YOU DO: Explain.
+# The variables "friends" and "siblings" are assigned values of 6 and 2 respectively.
+# The expression "friends > siblings" is asking whether the stored value of "friends" 
+# is greater than the stored value of "siblings"
+# In this case, that would be true. "puts" prints the answer to the console
 
 attendees = 9
 meals = 8
 puts attendees != meals
 # YOU DO: Explain.
-
+# Each variable is assigned a value and the expression is asking if they are NOT equal
+# The output would be "true", which would be printed to the console because of the "puts"
 
 #-------------------
 # PART 3: Logical Operators
@@ -96,15 +107,16 @@ age = 1
 
 # YOU DO:
 # Determine if the dog loves to play and loves treats
-
+puts loves_to_play && loves_treats
 
 # Determine if the dog loves to play and loves the dog park
-
+puts loves_to_play && loves_dog_park
 
 # Determine if the dog loves to play or loves the dog park
-
+puts loves_to_play || loves_dog_park
 
 # Determine if the dog loves to play and is a puppy
-
+puts loves_to_play && "is a puppy"
 # What did your final line of code evaluate to? Why do you think that is? Explain.
-# ANSWER:
+# ANSWER: "My final line evaluated to the string that I tried to compare the loves_to_play variable to"
+# I didn't assign a variable to that and comparing an integer and an string doesn't work.
